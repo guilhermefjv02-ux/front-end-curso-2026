@@ -1,0 +1,222 @@
+/* 1. IMPORTAÇÕES E VARIÁVEIS (Padrão Profissional) */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    /* Paleta de Cores Minimalista */
+    --cor-primaria: #7130e9;
+    --cor-primaria-hover: #5a26ba;
+    --fundo-pagina: #fcfcfc;
+    --fundo-elemento: #ffffff;
+    --texto-principal: #2d2d2d;
+    --texto-secundario: #666666;
+    --borda-suave: #eaeaea;
+    --raio-borda: 8px;
+}
+
+/* 2. RESET BÁSICO (Remove margens padrão dos navegadores) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 3. ESTILOS GERAIS (BODY) */
+body {
+    background-color: var(--fundo-pagina);
+    color: var(--texto-principal);
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo principal */
+    padding: 2rem;
+}
+
+/* Limita a largura para leitura confortável e fluidez em telas grandes */
+header, main, footer {
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* 4. TIPOGRAFIA */
+h1, h2, h3 {
+    font-family: "Exo 2", sans-serif;
+    color: var(--texto-principal);
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3rem; /* Usa rem para ser responsivo */
+    color: var(--cor-primaria);
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--texto-secundario);
+    margin-bottom: 2rem;
+}
+
+p {
+    color: var(--texto-secundario);
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+/* 5. CLASSES ESPECÍFICAS (HELPERS) */
+.destaque {
+    color: var(--cor-primaria);
+    font-weight: 500;
+}
+
+.italico {
+    font-style: italic;
+}
+
+/* 6. NAVEGAÇÃO (Com Flexbox) */
+nav {
+    margin: 2rem 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--borda-suave);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem; /* Espaçamento fluido entre os itens */
+}
+
+nav a {
+    color: var(--texto-principal);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease; /* Animação suave ao passar o mouse */
+}
+
+nav a:hover {
+    color: var(--cor-primaria);
+}
+
+/* Imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--raio-borda);
+    margin: 2rem 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Sombra elegante */
+}
+
+/* 7. COMPONENTES: LISTAS E TABELA (Minimalista) */
+ul {
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    color: var(--texto-secundario);
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: var(--fundo-elemento);
+    border-radius: var(--raio-borda);
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03); /* Dá um efeito de "cartão" à tabela */
+}
+
+th, td {
+    padding: 1.2rem;
+    text-align: left;
+    border-bottom: 1px solid var(--borda-suave);
+}
+
+th {
+    background-color: var(--fundo-pagina);
+    font-weight: 700;
+    color: var(--texto-principal);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+tr:last-child td {
+    border-bottom: none; /* Remove a linha da última fileira */
+}
+
+tr:hover {
+    background-color: #f9f9f9; /* Efeito visual ao passar o mouse na linha */
+}
+
+/* 8. COMPONENTES: FORMULÁRIO */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    background: var(--fundo-elemento);
+    padding: 2.5rem;
+    border-radius: var(--raio-borda);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    border: 1px solid var(--borda-suave);
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    color: var(--texto-principal);
+    margin-bottom: 0.3rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--borda-suave);
+    border-radius: var(--raio-borda);
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: var(--fundo-pagina);
+    transition: all 0.3s ease;
+}
+
+/* Foco nos campos do formulário */
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--cor-primaria);
+    box-shadow: 0 0 0 3px rgba(113, 48, 233, 0.15); /* Efeito de "glow" suave na cor da Inovaweb */
+}
+
+button[type="submit"] {
+    background-color: var(--cor-primaria);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: var(--raio-borda);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    align-self: flex-start; /* O botão não ocupa a largura toda */
+    margin-top: 1rem;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--cor-primaria-hover);
+}
+
+button[type="submit"]:active {
+    transform: scale(0.98); /* Efeito de clique */
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--borda-suave);
+    margin: 4rem 0;
+}
