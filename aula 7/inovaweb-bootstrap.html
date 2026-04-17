@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <link href="style.css" rel="stylesheet"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
@@ -56,7 +57,9 @@
                     Criamos soluções digitais modernas para o seu negócio crescer.
                 </p>
 
-                <a href="#" class="btn btn-waring btn-lg">
+                <a href="#" class="btn btn-waring btn-lg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                </svg>
                     Começar Agora
                 </a>
 
@@ -85,6 +88,8 @@
   
         <!-- Card 2 -->
         <div class="col-12 col-md-6 col-lg-4">
+          <div class="card position-relative p-1 badge bg-warning text-dark"> popular
+          </div>      
           <div class="card h-100">
             <div class="card-body">
               <h5 class="card-title">Design com IA</h5>
@@ -115,14 +120,83 @@
   </section>
 
 </button>
-  <footer class="bg-dark text-white py-3">
-    <div class="text-center">
-      © 2026 - InovaWeb
-  </footer>
+<footer class="bg-dark text-light pt-4 pb-3">
+  <div class="container">
+    <div class="row">
+
+      <!-- Sobre -->
+      <div class="col-md-4">
+        <h5>InovaWeb</h5>
+        <p>Soluções digitais modernas para o seu negócio crescer online.</p>
+      </div>
+
+      <!-- Contato -->
+      <div class="col-md-4">
+        <h5>Contato</h5>
+        <p><i class="bi bi-telephone"></i> (21) 99999-9999</p>
+        <p><i class="bi bi-envelope"></i> contato@inovaweb.com</p>
+        <p><i class="bi bi-geo-alt"></i> Rio de Janeiro-RJ</p>
+      </div>
+
+      <!-- Links úteis -->
+      <div class="col-md-4">
+        <h5>Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light">Início</a></li>
+          <li><a href="#" class="text-light">Serviços</a></li>
+          <li><a href="#" class="text-light">Contato</a></li>
+          <li><a href="#" class="text-light">Sobre</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <hr class="bg-light">
+
+    <!-- Redes sociais -->
+    <div class="text-center mb-2">
+      <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="text-light me-3"><i class="bi bi-linkedin"></i></a>
+      <a href="#" class="text-light"><i class="bi bi-whatsapp"></i></a>
+    </div>
+
+    <!-- Direitos -->
+    <div class="table-responsive">
+      <small>© 2026 - InovaWeb | Todos os direitos reservados</small>
+    </div>
+  </div>
+</footer>
 </body>
+<!-- Tabela básica Bootstrap -->
+<div class="">
+  <table class="table table-striped table-hover table bordered table-dark">
+    <thead>
+      <tr>
+        <th>Serviço</th>
+        <th>Prazo</th>
+        <th>Valor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Serviço A</td>
+        <td>7 dias</td>
+        <td>R$ 1.500</td>
+      </tr>
+      <tr>
+        <td>Serviço B</td>
+        <td>3 dias</td>
+        <td>R$ 1.500</td>
+      </tr>
+      <tr>
+        <td>Serviço C</td>
+        <td>10 dias</td>
+        <td>R$ 1.500</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
 </html>
 
-        <div src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
-
-    </html>
+  

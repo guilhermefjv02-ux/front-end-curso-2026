@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InovaWeb | Soluções Digitais de Alta Performance</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        /* CSS CUSTOMIZADO PARA REFINAMENTO PROFISSIONAL */
+        :root {
+            --primary-dark: #0f172a; /* Azul Navy Profundo - transmite seriedade */
+            --accent-blue: #3b82f6;  /* Azul Moderno - para calls to action */
+            --soft-bg: #f8fafc;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #334155;
+            background-color: var(--soft-bg);
+        }
+
+        /* Efeito de Vidro (Glassmorphism) na Navbar ao rolar */
+        .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(15, 23, 42, 0.95) !important;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* Ajuste fino na Hero para parecer um site premium */
+        .hero-section {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            padding: 120px 0;
+            clip-path: ellipse(150% 100% at 50% 0%); /* Curvatura sutil no fundo */
+        }
+
+        /* Cards com elevação suave e transição de escala no hover */
+        .custom-card {
+            border: none;
+            border-radius: 16px;
+            transition: all 0.3s ease;
+            background: #fff;
+        }
+
+        .custom-card:hover {
+            transform: translateY(-10px);
+            shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilização da imagem de portfólio com overlay de gradiente */
+        .portfolio-wrapper {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(to top, rgba(15,23,42,0.9), transparent);
+            opacity: 0;
+            transition: 0.3s;
+            display: flex;
+            align-items: flex-end;
+            padding: 20px;
+        }
+
+        .portfolio-wrapper:hover .portfolio-overlay {
+            opacity: 1;
+        }
+
+        /* Tabela de Preços com estilo moderno (Clean Table) */
+        .pricing-table thead th {
+            background-color: var(--primary-dark);
+            border: none;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-extrabold fs-3" href="#">INOVA<span class="text-info">WEB</span></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-3">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Cases</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#precos">Planos</a></li>
+                    <li class="nav-item"><a class="btn btn-outline-info px-4 rounded-pill" href="#contato">Falar com Consultor</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    -->
+    <header class="hero-section text-white text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <span class="badge rounded-pill bg-info text-dark mb-3 px-3 py-2">TECNOLOGIA & ESTRATÉGIA</span>
+                    <h1 class="display-3 fw-bold mb-4">Transformamos Visões em <span class="text-info">Realidade Digital.</span></h1>
+                    <p class="lead opacity-75 mb-5">A InovaWeb combina design centrado no usuário com engenharia de ponta para acelerar o crescimento do seu negócio.</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#portfolio" class="btn btn-info btn-lg px-5 py-3 fw-bold rounded-3">Ver Projetos</a>
+                        <a href="#contato" class="btn btn-outline-light btn-lg px-5 py-3 rounded-3">Agendar Call</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    -->
+    <section id="servicos" class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h6 class="text-primary fw-bold text-uppercase">O que fazemos</h6>
+                <h2 class="display-5 fw-bold text-dark">Especialistas em Digital</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4 text-center">
+                    <div class="card h-100 p-4 shadow-sm custom-card">
+                        <div class="mb-4 text-info fs-1"><i class="bi bi-code-slash"></i></div>
+                        <h4 class="fw-bold">Desenvolvimento Web</h4>
+                        <p class="text-muted">Aplicações escaláveis utilizando as tecnologias mais modernas do mercado.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card h-100 p-4 shadow-sm custom-card border-info border-1">
+                        -->
+                        <div class="mb-4 text-info fs-1"><i class="bi bi-robot"></i></div>
+                        <h4 class="fw-bold">Design com IA</h4>
+                        <p class="text-muted">Otimização de layouts e criação de assets inteligentes com inteligência artificial.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card h-100 p-4 shadow-sm custom-card">
+                        <div class="mb-4 text-info fs-1"><i class="bi bi-rocket-takeoff"></i></div>
+                        <h4 class="fw-bold">Consultoria Digital</h4>
+                        <p class="text-muted">Estratégias de SEO e presença online para dominar o seu nicho de mercado.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    -->
+    <section id="portfolio" class="py-5 bg-dark text-white">
+        <div class="container py-5">
+            <h2 class="text-center display-5 fw-bold mb-5">Nossos Cases de <span class="text-info">Sucesso</span></h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-wrapper">
+                        <img src="imagem 1.png" class="img-fluid" alt="Web Design">
+                        <div class="portfolio-overlay">
+                            <div>
+                                <h5 class="fw-bold">Fintech Solution</h5>
+                                <p class="small">UI/UX & Mobile App</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-wrapper">
+                        <img src="https://images.unsplash.com/photo-1523726491678-bf852e717f6a?auto=format&fit=crop&w=600" class="img-fluid" alt="Web Design">
+                        <div class="portfolio-overlay">
+                            <div>
+                                <h5 class="fw-bold">EcoCommerce</h5>
+                                <p class="small">E-commerce Sustentável</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-wrapper">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600" class="img-fluid" alt="Web Design">
+                        <div class="portfolio-overlay">
+                            <div>
+                                <h5 class="fw-bold">Dashboard IA</h5>
+                                <p class="small">Análise de Dados com IA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    -->
+    <section id="precos" class="py-5">
+        <div class="container py-5">
+            <h2 class="text-center display-5 fw-bold mb-5">Investimento Transparente</h2>
+            <div class="table-responsive rounded-4 shadow">
+                <table class="table table-hover pricing-table align-middle mb-0">
+                    <thead>
+                        <tr>
+                            <th>Solução</th>
+                            <th class="text-center">Prazo</th>
+                            <th class="text-center">Investimento</th>
+                            <th class="text-center">Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white">
+                        <tr>
+                            <td class="ps-4 fw-semibold text-dark">Landing Page Premium</td>
+                            <td class="text-center text-muted">7 dias</td>
+                            <td class="text-center fw-bold text-primary">R$ 1.800</td>
+                            <td class="text-center"><a href="#" class="btn btn-dark btn-sm rounded-pill px-4">Selecionar</a></td>
+                        </tr>
+                        <tr>
+                            <td class="ps-4 fw-semibold text-dark">Portal Corporativo</td>
+                            <td class="text-center text-muted">20 dias</td>
+                            <td class="text-center fw-bold text-primary">R$ 4.500</td>
+                            <td class="text-center"><a href="#" class="btn btn-dark btn-sm rounded-pill px-4">Selecionar</a></td>
+                        </tr>
+                        <tr>
+                            <td class="ps-4 fw-semibold text-dark">Custom Design AI (Full)</td>
+                            <td class="text-center text-muted">15 dias</td>
+                            <td class="text-center fw-bold text-primary">R$ 3.200</td>
+                            <td class="text-center"><a href="#" class="btn btn-dark btn-sm rounded-pill px-4">Selecionar</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-4">INOVAWEB</h5>
+                    <p class="text-white-50">Sediada no Rio de Janeiro, atuando globalmente na criação de experiências digitais memoráveis.</p>
+                </div>
+                <div class="col-md-4 mb-4 ps-md-5">
+                    <h5 class="fw-bold mb-4">Navegação</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50 text-decoration-none hover-info">Serviços</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Sobre Nós</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Políticas de Privacidade</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-4">Conecte-se</h5>
+                    <div class="d-flex gap-3 justify-content-center justify-content-md-start">
+                        <a href="#" class="text-white fs-4"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="text-center">
+                <small class="text-white-50">&copy; 2026 InovaWeb Soluções Digitais. Todos os direitos reservados.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
