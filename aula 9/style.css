@@ -1,0 +1,5 @@
+.portfolio-wrapper img {
+    width: 100%;
+    height: 250px; /* define altura padrão */
+    object-fit: cover; /* corta igual às imagens do Unsplash */
+}
