@@ -33,7 +33,7 @@ for(let i = 0; i < listacompras.length; i++){
 
 // percorrendo o vetor ao contrário
 
-for(let i) = listacompras.length - 1; i >= 0; i--){
+for(let i) = (listacompras.length - 1; i >= 0; i--){
     console.log(`index ${i}: ${listacompras[i]}`)
 }  */
 

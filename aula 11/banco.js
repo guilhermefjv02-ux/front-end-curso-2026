@@ -87,7 +87,8 @@ function versresumo() {
 
 function simulartentativasSaque( valor, maxtentativas){
     let tentativa = 0
-    while( tentativa < maxtentativas) {
+    while( tentativa < maxtentativas $$ valor > saldo) {
+        console.log(`tentativa ${tentativa + 1}: R$ ${valor.toFixed(2)} falhou. Saldo insuficiente.`)
         if(valor < 1000000){
             
         }
