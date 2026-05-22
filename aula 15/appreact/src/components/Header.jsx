@@ -2,9 +2,9 @@
 
 function Header() {
     return (
-        <header>
+        <header className="header">
             <img
-                src="https://placehold.co/800x300"
+                src="https://placehold.co/800x300?text=code+frontier&font=roboto"
                 alt="Foto do perfil"
             />
         </header>
